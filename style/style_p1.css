@@ -1,0 +1,92 @@
+/*VARIBLES ESTRUCTURALES*/
+body {
+    background-color: rgb(233, 225, 210) ;
+}
+/* ID*/
+#Titulo_App {
+    /*posicion*/
+    padding: 8px;
+    margin: 25px;
+    text-align: center; /* Centrar horizontalmente */
+    margin-top: 50px; /* Ajusta el margen superior para centrar verticalmente */
+    /* other styling */
+    background-color: rgb(188, 6, 170);
+    border-radius: 10px;
+    font-family: Arial;
+    color: rgb(255, 255, 255);
+    transition:color 0.3s ease-in-out;
+    font-size: 100px;
+    animation: cambioColorLetra1 5s infinite;
+}
+@keyframes cambioColorLetra1 {
+    0% {color:rgb(33, 244, 174)  }
+    50% {color: #ffcc00; }
+    100% {color: #00ffe1; }
+}
+
+
+#Titulo_tareas {
+    /*posicion*/
+    text-align: center;
+    margin-top: 50px;
+    /*otros estilos*/
+    
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+/* Reglas de estilo para el BOTON Nueva tarea */
+#N_tarea/*BOTON*/ {
+    /* posicion*/
+    padding: 8px;
+    margin: 25px;
+    text-align: center;
+    /*tamaño*/
+    width: 150px;
+    height: 100px;
+    background-color: #ffcc00; /* Color de fondo inicial */
+    transition: background-color 0.4s ease-in-out; /* Transición suave al cambiar el color */
+    
+    /* Aplicación de la animación al botón Nueva tarea */
+    animation: cambioColor 3s infinite; /* Nombre de la animación, duración y repeticiones */
+}
+#M_tarea/*BOTON*/ {
+    /* posicion*/
+    padding: 8px;
+    margin: 25px;
+    text-align: center;
+    /*tamaño*/
+    width: 150px;
+    height: 100px;
+    background-color: #ffcc00; /* Color de fondo inicial */
+    transition: background-color 0.4s ease-in-out; /* Transición suave al cambiar el color */
+    
+    /* Aplicación de la animación al botón Nueva tarea */
+    animation: cambioColor 3s infinite; /* Nombre de la animación, duración y repeticiones */
+}
+#V_tarea/*BOTON*/ {
+    /* posicion*/
+    padding: 8px;
+    margin: 25px;
+    text-align: center;
+    /*tamaño*/
+    width: 150px;
+    height: 100px;
+    background-color: #ffcc00; /* Color de fondo inicial */
+    transition: background-color 0.4s ease-in-out; /* Transición suave al cambiar el color */
+    
+    /* Aplicación de la animación al botón Nueva tarea */
+    animation: cambioColor 3s infinite; /* Nombre de la animación, duración y repeticiones */
+}
+
+/* Definición de la animación cambioColor */
+@keyframes cambioColor {
+    0% { background-color: #ffcc00; }
+    50% { background-color: rgb(188, 6, 170) }
+    100% { background-color: #00ffe1; }
+}
+
+
+/*CLASS*/
