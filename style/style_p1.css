@@ -1,92 +1,75 @@
-/*VARIBLES ESTRUCTURALES*/
+/* CLASES ESTRUCTURALES */
 body {
-    background-color: rgb(233, 225, 210) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
-/* ID*/
+
+/* ID: Titulo_App */
 #Titulo_App {
-    /*posicion*/
-    padding: 8px;
-    margin: 25px;
-    text-align: center; /* Centrar horizontalmente */
-    margin-top: 50px; /* Ajusta el margen superior para centrar verticalmente */
-    /* other styling */
-    background-color: rgb(188, 6, 170);
-    border-radius: 10px;
-    font-family: Arial;
-    color: rgb(255, 255, 255);
-    transition:color 0.3s ease-in-out;
-    font-size: 100px;
-    animation: cambioColorLetra1 5s infinite;
+   /* Ajustes de posición y centrado */
+   padding: 8px;
+   text-align: center; /* Centrar horizontalmente */
+   margin-bottom: 20px; /* Agrega espacio entre el título y otros elementos */
+ 
+   /* Estilo del título */
+   background-color: rgb(188, 6, 170);
+   border-radius: 10px;
+   font-family: Arial;
+   color: rgb(255, 255, 255);
+   transition: color 0.3s ease-in-out;
+   font-size: 100px;
+   animation: cambioColorLetra1 5s infinite;
 }
+
 @keyframes cambioColorLetra1 {
-    0% {color:rgb(33, 244, 174)  }
-    50% {color: #ffcc00; }
-    100% {color: #00ffe1; }
+   0% { color: rgb(33, 244, 174); }
+   50% { color: #ffcc00; }
+   100% { color: #00ffe1; }
 }
 
 
+/* Contenedor principal para título y botones */
+#contenedor_principal {
+    display: flex;
+    flex-direction: row; /* Mantiene la disposición horizontal para Titulo_tareas y botones */
+    align-items: center;
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+/* ID: Titulo_tareas */
 #Titulo_tareas {
-    /*posicion*/
+    margin-top: 20px;
+    margin-bottom: 20px; /* Agrega espacio en la parte inferior del título */
     text-align: center;
-    margin-top: 50px;
-    /*otros estilos*/
-    
     font-size: 50px;
     font-family: 'Courier New', Courier, monospace;
-
 }
 
+/* Contenedor para botones con disposición vertical */
+#contenedor_botones {
+    display: flex;
+    flex-direction: column; /* Disposición vertical para los botones */
+    align-items: center;
+}
 
-/* Reglas de estilo para el BOTON Nueva tarea */
-#N_tarea/*BOTON*/ {
-    /* posicion*/
+/* CLASE: boton (BOTONES) */
+.boton {
     padding: 8px;
-    margin: 25px;
-    text-align: center;
-    /*tamaño*/
+    margin: 10px;
     width: 150px;
     height: 100px;
-    background-color: #ffcc00; /* Color de fondo inicial */
-    transition: background-color 0.4s ease-in-out; /* Transición suave al cambiar el color */
-    
-    /* Aplicación de la animación al botón Nueva tarea */
-    animation: cambioColor 3s infinite; /* Nombre de la animación, duración y repeticiones */
-}
-#M_tarea/*BOTON*/ {
-    /* posicion*/
-    padding: 8px;
-    margin: 25px;
-    text-align: center;
-    /*tamaño*/
-    width: 150px;
-    height: 100px;
-    background-color: #ffcc00; /* Color de fondo inicial */
-    transition: background-color 0.4s ease-in-out; /* Transición suave al cambiar el color */
-    
-    /* Aplicación de la animación al botón Nueva tarea */
-    animation: cambioColor 3s infinite; /* Nombre de la animación, duración y repeticiones */
-}
-#V_tarea/*BOTON*/ {
-    /* posicion*/
-    padding: 8px;
-    margin: 25px;
-    text-align: center;
-    /*tamaño*/
-    width: 150px;
-    height: 100px;
-    background-color: #ffcc00; /* Color de fondo inicial */
-    transition: background-color 0.4s ease-in-out; /* Transición suave al cambiar el color */
-    
-    /* Aplicación de la animación al botón Nueva tarea */
-    animation: cambioColor 3s infinite; /* Nombre de la animación, duración y repeticiones */
+    background-color: #ffcc00;
+    transition: background-color 0.4s ease-in-out;
+    animation: cambioColor 3s infinite;
 }
 
 /* Definición de la animación cambioColor */
 @keyframes cambioColor {
     0% { background-color: #ffcc00; }
-    50% { background-color: rgb(188, 6, 170) }
+    50% { background-color: rgb(188, 6, 170); }
     100% { background-color: #00ffe1; }
 }
-
-
-/*CLASS*/
