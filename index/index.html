@@ -8,20 +8,19 @@
     <link rel="stylesheet" href="/style/style_p1.css">
 </head>
 <body>
-
+<div>
 <h1 id="Titulo_App">To - do LIST</h1>
-<p id="Titulo_tareas">
-<b>ACCIONES</b>
-</p>
-<div class="Contenedor_buttons">
-    <button id="N_tarea">Nueva tarea</button>
-    <br>
-    <button id="M_tarea">modificar tarea</button>
-    <br>
-    <button id="V_tarea">Ver tareas</button>
-    <br>
-
 </div>
+
+<div id="contenedor_principal">
+    <h1 id="Titulo_tareas">Tareas</h1>
+    <div id="contenedor_botones">
+        <button class="boton" id="N_tarea">Nueva Tarea</button>
+        <button class="boton" id="M_tarea">Modificar Tarea</button>
+        <button class="boton" id="V_tarea">Ver Tareas</button>
+    </div>
+</div>
+
 
 <script>
     document.getElementById("N_tarea").addEventListener("click", function() {
