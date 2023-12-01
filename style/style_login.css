@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedorTitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Añade espacio entre el título y el formulario */
+    margin-bottom: 20px; /* Añade espacio entre el formulario y el footer */
+
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/*variables #ID*/
+/* ID: Titulo_App */
+#Titulo_App {
+    /* Ajustes de posición y centrado */
+    padding: 8px;
+    text-align: center; /* Centrar horizontalmente */
+    margin-bottom: 20px; /* Agrega espacio entre el título y otros elementos */
+  
+    /* Estilo del título */
+    background-color: rgb(188, 6, 170);
+    border-radius: 10px;
+    font-family: Arial;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease-in-out;
+    font-size: 100px;
+    animation: cambioColorLetra1 5s infinite;
+ }
+ 
+ @keyframes cambioColorLetra1 {
+    0% { color: rgb(33, 244, 174); }
+    50% { color: #ffcc00; }
+    100% { color: #00ffe1; }
+ }
+ 
+/*variable .clases*/
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px; /* Añade espacio entre el formulario y el footer */
+}
